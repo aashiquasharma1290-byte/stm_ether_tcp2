@@ -1,4 +1,6 @@
-# STM32H747 Ethernet TCP Server
+## Objective
+
+To implement Ethernet-based TCP communication using the STM32H747I-DISCO as a TCP server and a PC as a Python TCP client.# STM32H747 Ethernet TCP Server
 
 ## Configuration
 
@@ -9,7 +11,7 @@
 - **Network:** Static IP, DHCP disabled
 - **STM32 IP:** 192.168.1.10
 - **TCP Server Port:** 7
-- **PC:** Python TCP Client
+- **PC:** Python TCP Client(IP,192.168.001.20)
 
 ## Project Files
 
