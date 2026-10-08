@@ -20,8 +20,8 @@ To implement Ethernet-based TCP communication using the STM32H747I-DISCO as a TC
 - **`ethernetif.c`** — Handles the Ethernet interface, RMII communication, LAN8742 PHY and DMA.
 - **`tcp_echoserver.h`** — TCP server initialization declaration.
 - **`tcp_echoserver.c`** — Implements the TCP server: bind, listen, accept and data transmission.
-- **`STM32H747XIXX_FLASH.ld`** — Defines memory sections for Ethernet DMA descriptors and RX buffer pool in RAM_D2.
-- **`PC_Client/client.py`** — Python TCP client that connects to the STM32 server and receives the transmitted data.
+- **`STM32H747XIX_FLASH.ld`** — Defines memory sections for Ethernet DMA descriptors and RX buffer pool in RAM_D2.
+- **`client.py`** — Python TCP client that connects to the STM32 server and receives the transmitted data.
 
 ## TCP Communication Flow
 
