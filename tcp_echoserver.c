@@ -6,22 +6,6 @@
  */
 
 #include "tcp_echoserver.h"
-#include "lwip/tcp.h"
-#include "lwip/err.h"
-#include "lwip/pbuf.h"
-#include <string.h>
-
-#define TCP_SERVER_PORT 7
-
-
-       
-/*
- * tcp_echoserver.c
- * STM32H747I-DISCO - lwIP RAW API, no RTOS
- * TCP server on port 7
- */
-
-#include "tcp_echoserver.h"
 #include "main.h"
 #include "lwip/tcp.h"
 #include "lwip/err.h"
