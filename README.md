@@ -24,8 +24,6 @@ To implement Ethernet-based TCP communication using the STM32H747I-DISCO as a TC
 - **`client.py`** — Python TCP client that connects to the STM32 server and receives the transmitted data.
 
 ## TCP Communication Flow
-
-```text
 STM32 Static IP
 192.168.1.10
       ↓
@@ -39,11 +37,31 @@ Accept PC Connection
       ↓
 Send "AASHIQUA"
       ↓
-Python TCP Client
+Python TCP Client (PC)
       ↓
 Receive "AASHIQUA"
+      ↓
+Send Message from PC
+      ↓
+STM32 Processes the Message
+      ↓
+Send Reply to PC
+
 
 **Expected Result**
-Connecting to STM32 TCP server...
-Connected!
-Received from STM32: AASHIQUA
+Connecting to STM32 at 192.168.1.10:7...
+STM32 connected with Ethernet!
+STM32: AASHIQUA
+
+Type a message and press Enter.
+Type 'exit' to disconnect.
+
+Aashiqua (PC) > Hello STM32
+STM32 > Hello PC
+
+Aashiqua (PC) > How are you?
+STM32 > I am fine
+
+Aashiqua (PC) > Test message
+STM32 > Test message
+
